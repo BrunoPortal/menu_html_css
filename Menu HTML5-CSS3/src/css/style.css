@@ -1,0 +1,308 @@
+/*-------Menu--HTML5--CSS3--------*/
+
+/*-------Reset--------*/
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-height: 100%;
+}
+
+/*------Otimização-Códigos------*/
+
+.menu, .search{
+    background-color: #8c8c8c;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.btn-menu, .btn-menu-search{
+    background-color: #000000;
+    margin: 25px;
+    font-size: 30px;
+    color: #ffffff;
+    cursor:pointer;
+}
+
+.btn-close, .btn-close-search{
+    float: right;
+    font-size: 30px;
+    color: #ffffff;
+    cursor:pointer;
+}
+
+.btn-menu:hover, .btn-menu-search:hover{
+    color: #8c8c8c;
+}
+
+.menu li:hover, .btn-search:hover{
+    background-color: #4f4949;
+}
+
+.gradiente, .gradiente-search{
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*------Container------*/
+
+.container{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+/*------Header------*/
+
+.header{
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+}
+
+.logo{
+    margin: 15px 10px 15px 15px;
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*------Menu------*/
+
+.menu{
+    width: 75%;
+    height: 100%;
+}
+
+.menu ul{ 
+    text-align: left;
+    font-size: 25px;
+} 
+
+.menu li{
+    padding: 4%;
+}
+
+.menu li a{
+    color: #ffffff;
+}
+
+.menu li a:hover{
+    color: #f3f2f2;
+}
+
+.btn-menu{
+    float: left;
+}
+
+/*------Busca------*/
+
+.search{
+    width: 100%;
+    height: 10%; 
+    text-align: center;
+}
+
+.input-search{
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 25px;
+    background: #f5f5f5;
+    margin: 10px 4px;
+    padding: 2px;
+}
+
+.icon{
+    font-size: 25px;
+    color: #000000;
+}
+
+.icon:hover{
+    color: #4f4949;
+}
+
+.btn-menu-search{
+    float: right;
+}
+
+/*---------Mobile First---------*/
+
+/*------Small Device--Smartfones-----*/
+
+@media screen
+    and (min-width: 480px){
+        .menu{
+            width: 70%;
+            height: 100%;
+        }
+    }
+
+/*------Small Device--Tablets-----*/
+
+@media screen
+    and (min-width: 768px){
+        .menu{
+            width: 60%;
+            height: 100%;
+        }
+        
+        .menu ul{ 
+            font-size: 28px;
+        }    
+    }
+
+/*------Medium Device--Tablets e Dektops-----*/
+
+@media screen
+    and (min-width: 960px){
+        .logo{
+           width: 180px;
+        } 
+        
+        .btn-menu{
+            display: none;
+        } 
+        
+        .menu{
+            display: block !important;
+            background-color: #000000;
+            width: 508px;
+            height: auto;
+            position: absolute;
+            float: right;
+            top: 30px;
+            left: 400px;
+        }
+
+        .menu ul{ 
+            font-size: 18px;
+        } 
+
+        .menu li{
+            padding: 8px;
+        }
+
+        .menu ul li{
+            display: inline;
+        }
+
+        .menu li:hover{
+             background-color: #000000;   
+        }
+
+        .menu li a:hover{
+            color: #8c8c8c;
+        }  
+        
+        .gradiente{
+           top: 0px;
+           left: 0px;
+           width: 0%;
+           height: 0%;
+        }
+    }
+
+/*------Medium Device--Tablets e Dektops-----*/
+
+@media screen
+    and (min-width: 1060px){
+        .menu{
+            left: 490px;
+        }
+    }
+
+/*------Medium Device--Dektops-----*/
+
+@media screen
+    and (min-width: 1224px){
+        .menu{
+            left: 470px;
+        }
+        
+        .search{
+            display: block !important;
+            background-color: #000000;
+            width: 300px;
+            height: auto;
+            position: absolute;
+            float: right;
+            top: 6px;
+            left: 920px;
+        }
+        
+        .input-search{
+            font-size: 20px;
+            background: #f5f5f5;
+            margin: 19px;
+            padding: 2px;
+        }
+        
+        .icon{
+            font-size: 28px;
+            color: #ffffff;
+            position: absolute;
+            top: 20px;
+        }
+
+        .icon:hover{
+            color: #4f4949;
+        }
+
+        .btn-menu-search{
+            display: none;
+        } 
+        
+        .gradiente-search{
+           top: 0px;
+           left: 0px;
+           width: 0%;
+           height: 0%;
+        }
+    }
+
+/*------Medium Device--Dektops-----*/
+
+@media screen
+    and (min-width: 1224px){
+       .menu{
+            left: 537px;
+        } 
+        
+        .search{
+            left: 1030px;
+        }
+    }

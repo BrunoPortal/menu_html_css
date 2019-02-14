@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="pt">
+  
+    <head>
+    
+        <!-- Required meta tags -->
+    
+        <meta charset="utf-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+        <!-- CSS -->
+    
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    
+        <title>Teste Menu</title>
+  
+    </head>
+  
+    <body>
+    
+        <div class="container">
+            
+            <div class="header">
+                
+                <button class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+                
+                <button class="btn-menu-search"><i class="fas fa-search"></i></button>
+                
+                <a href="index.html"><h1 class="logo"><i class="fas fa-mug-hot"></i> Café</h1></a>
+                
+                <div class="gradiente"></div>
+            
+                <div class="gradiente-search"></div>
+
+                    <nav class="menu">
+
+                        <ul>
+
+                            <li>
+                                <a href="#">Início</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Serviços</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Depoimentos</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Quem Somos</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Contatos</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+            
+                    <div class="search">
+
+                        <input class="input-search" type="text" size="15" placeholder="Busca">
+
+                        <a class="icon" href="#"><i class="fas fa-search"></i></a> 
+
+                    </div>
+                
+            </div>
+        
+        </div>
+        
+        <!-- JQuery -->
+        
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <script>
+        $(".btn-menu").click(function(){
+            $(".menu, .gradiente").show();
+        })
+        
+        $(".gradiente").click(function(){
+            $(".menu, .gradiente").hide();
+        })
+            
+        $(".btn-menu-search").click(function(){
+            $(".search, .gradiente-search").show();
+        })
+        
+        $(".gradiente-search").click(function(){
+            $(".search, .gradiente-search").hide();
+        })
+        </script>
+  
+    </body>
+
+</html>
