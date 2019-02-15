@@ -147,8 +147,9 @@ img{
 }
 
 .icon{
-    font-size: 25px;
+    font-size: 28px;
     color: #000000;
+    background-color: #8c8c8c; 
 }
 
 .icon:hover{
@@ -276,6 +277,7 @@ img{
             color: #ffffff;
             position: absolute;
             top: 20px;
+            background-color: #000000; 
         }
 
         .icon:hover{
