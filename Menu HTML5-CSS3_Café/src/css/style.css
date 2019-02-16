@@ -92,7 +92,7 @@ img{
     height: 80px;
 }
 
-.logo{
+.logo, .title{
     margin: 15px 10px 15px 15px;
     font-size: 45px;
     color: #ffffff;
@@ -115,7 +115,7 @@ img{
     padding: 4%;
 }
 
-.menu li a{
+.menu li a, .icon-item{
     color: #ffffff;
 }
 
@@ -125,6 +125,10 @@ img{
 
 .btn-menu{
     float: left;
+}
+
+.title{
+    text-align: left;
 }
 
 /*------Busca------*/
@@ -149,7 +153,8 @@ img{
 .icon{
     font-size: 28px;
     color: #000000;
-    background-color: #8c8c8c; 
+    background-color: #8c8c8c;
+    cursor:pointer;
 }
 
 .icon:hover{
@@ -194,7 +199,7 @@ img{
            width: 180px;
         } 
         
-        .btn-menu{
+        .btn-menu, .title, .icon-item{
             display: none;
         } 
         
@@ -281,7 +286,7 @@ img{
         }
 
         .icon:hover{
-            color: #4f4949;
+            color: #8c8c8c;
         }
 
         .btn-menu-search{
